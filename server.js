@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 const dotenv = require('dotenv').config()
-const PORT = process.env.PORT
+const PORT = process.env.PORT || 4321
 const dataurl = process.env.dataurl
 
 app.get('/', (req, res) => {
